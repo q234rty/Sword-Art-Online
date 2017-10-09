@@ -1,0 +1,12 @@
+模拟、搜索专练
+
+A	CodeForces 47C		Crossword
+B	CodeChef COOK82E	Binary Tree
+C	CodeForces 704C		Black Widow
+D	CodeForces 163D		Large Refrigerator
+E	CodeForces 293B		Distinct Paths
+F	CodeForces 460E		Roland and Rose
+G	HYSBZ 1306			match循环赛
+
+https://vjudge.net/contest/189766
+密码:aluba
