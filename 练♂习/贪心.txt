@@ -1,0 +1,10 @@
+https://vjudge.net/contest/192101
+密码：aluba2
+
+A	CodeChef NEO01	Chef and the Feast
+B	51Nod 1053		最大M子段和 V2
+C	CodeForces 353E	Antichain
+D	CodeForces 746F	Music in Car
+E	CodeForces 521D	Shop
+F	CodeForces 736E	Chess Championship
+G	CodeForces 799E	Aquarium decoration
