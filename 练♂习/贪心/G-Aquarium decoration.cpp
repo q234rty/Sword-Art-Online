@@ -13,32 +13,31 @@ inline int read(){
 	for(;ch>='0'&&ch<='9';ch=getchar()) x=(x<<1)+(x<<3)+ch-48;
 	return f?-x:x;
 }
-int n,b[4][N],m,k,vis[N],a[N],tot[4],pos[4];
-ll sum[4][N];
-inline int check(int t,int x,int y){
-	
-}
+int n,m,k,rk[N],vis[N];
+struct data{
+	int x,id;
+	bool operator <(const data &a)const{
+		return x<a.x;
+	}
+}a[N];
+multiset <int> A,B,C,D;
 int main(){
 	n=read();m=read();k=read();
-	For(i,1,n) a[i]=read();
+	For(i,1,n) a[i]=(data){read(),i};
+	sort(a+1,a+1+n);
+	For(i,1,n) rk[a[i].id]=i;
 	int n1=read();
-	For(i,1,n1) vis[read()]|=1;
+	For(i,1,n1) vis[rk[read()]]|=1;
 	int n2=read();
-	For(i,1,n2) vis[read()]|=2;
-	For(i,1,n) b[vis[i]][++tot[vis[i]]]=v[i];
-	For(i,0,3) sort(b[i]+1,b[i]+1+tot[i]);
-	For(i,0,3) For(j,1,tot[i]) s[i][j]=s[i][j-1]+b[i][j];
-	ll ans=inf;
-	for(int i=0;i<=k&&i<=tot[3];i++){
-		if(k-i>min(tot[1],tot[2])||k*2-i>m) continue;
-		int l=0,r=1e9,Ans;
-		while(l<=r){
-			int mid=(l+r)>>1;
-			if(check(mid,i,k-i)>=m) Ans=mid,r=mid-1;
-			else l=mid+1;
-		}
+	For(i,1,n2) vis[rk[read()]]|=2;
+	For(i,1,n){
+		if(vis[i]==0) D.insert(a[i].x);
+		if(vis[i]==1) B.insert(a[i].x);
+		if(vis[i]==2) C.insert(a[i].x);
+		if(vis[i]==3) A.insert(a[i].x);
 	}
-	if(ans==inf) puts("-1");
-	else cout<<ans<<endl;
+	For(x,0,k){
+		if(2*k-i>m||)
+	}
 	return 0;
 }
