@@ -8,3 +8,5 @@ inline ll read(){
 	while(ch>='0'&&ch<='9')sum=sum*10+ch-48,ch=nc();
 	return sum;
 }
+
+
