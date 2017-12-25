@@ -22,7 +22,7 @@ inline void insert(){
 }
 queue <int> Q;
 int fail[N];
-inline void lzq_AC(){
+inline void lzq_AK(){
 	Q.push(0);
 	while(!Q.empty()){
 		int x=Q.front();Q.pop();
@@ -39,7 +39,7 @@ int q[N],top;
 int main(){
 	scanf("%s",s+1);
 	n=read();For(i,1,n) insert();
-	lzq_AC();n=strlen(s+1);
+	lzq_AK();n=strlen(s+1);
 	int x=0;q[top]=0;
 	For(i,1,n){
 		x=ch[x][s[i]-'a'];
